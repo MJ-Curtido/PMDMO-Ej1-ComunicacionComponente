@@ -6,10 +6,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent implements OnInit {
-  btnPulsado(e:Event) {
-    if (e.target) {
-      
-    }
+  cadena: String = "";
+
+  btnPulsado(btn:HTMLButtonElement) {
+    this.cadena = btn.innerText;
   }
 
   constructor() { }

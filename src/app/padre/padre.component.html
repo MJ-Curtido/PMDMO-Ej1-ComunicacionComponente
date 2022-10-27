@@ -1,5 +1,5 @@
-<button #btn1 (click)="btnPulsado($event)"></button>
-<button #btn2 (click)="btnPulsado($event)"></button>
-<button #btn3 (click)="btnPulsado($event)"></button>
+<button #btn1 (click)="btnPulsado(btn1)">Botón 1</button>
+<button #btn2 (click)="btnPulsado(btn2)">Botón 2</button>
+<button #btn3 (click)="btnPulsado(btn3)">Botón 3</button>
 
-<!--<app-hijo [btnPulsado]="btnPulsado()"></app-hijo>-->
+<app-hijo [btnPulsado]="this.cadena"></app-hijo>
