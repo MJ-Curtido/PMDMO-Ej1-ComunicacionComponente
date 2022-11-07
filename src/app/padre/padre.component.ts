@@ -7,9 +7,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class PadreComponent implements OnInit {
   cadena: String = "";
+  cadenaColor: String = "";
 
   btnPulsado(btn:HTMLButtonElement) {
     this.cadena = btn.innerText;
+    this.cadenaColor = btn.id;
   }
 
   constructor() { }
