@@ -1,1 +1,5 @@
-<p>{{btnPulsado}}</p>
+<p [ngClass]="{
+    'btn1': cadenaColor == 'btn1',
+    'btn2': cadenaColor == 'btn2',
+    'btn3': cadenaColor == 'btn3'
+}">{{btnPulsado}}</p>

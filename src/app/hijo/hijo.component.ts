@@ -10,6 +10,7 @@ export class HijoComponent implements OnInit {
   constructor() { }
 
   @Input() btnPulsado!:String;
+  @Input() cadenaColor!:String;
 
   ngOnInit(): void {
   }
